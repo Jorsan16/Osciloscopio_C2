@@ -481,9 +481,9 @@ void startScreen() {                      // Staru up screen
   oled.setTextSize(2);                    // at double size character
   oled.setTextColor(WHITE);
   oled.setCursor(10, 15);
-  oled.println(F("PMO-RP1"));             // Title(Poor Man's Osilloscope, RadioPench 1)
+  oled.println(F("Circuitos 2"));             // Title(Poor Man's Osilloscope, RadioPench 1)
   oled.setCursor(10, 35);
-  oled.println(F("    v2.0"));            // version No.
+  oled.println(F(" Grupo 3 "));            // version No.
   oled.display();                         // actual display here
   delay(1500);
   oled.clearDisplay();
