@@ -1,9 +1,3 @@
-/*
-    PMO-RP1 V2.0
-    20200427_OLEDoscilloscope_V200E.ino)
-    sketchF23020byteAlocal variable:1231byte free
-    Apr.27 2020 by radiopench http://radiopench.blog96.fc2.com/
-*/
 
 #include <Wire.h>
 #include <Adafruit_GFX.h>
