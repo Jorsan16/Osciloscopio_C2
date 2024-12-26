@@ -4,7 +4,7 @@
 //--------------------- Inicializacion de Librerias --------------------------------------------------
 #include <RH_ASK.h>		// incluye libreria RadioHead.h
 #include <SPI.h> 		// incluye libreria SPI necesaria por RadioHead.h
-RH_ASK rf_driver;
+RH_ASK rf_driver(4000);
 
 
 //-----------------------Rangos de la lectura ----------------------------------------
@@ -63,7 +63,7 @@ void loop() {
 
   // Calcular el promedio
   smoothedValue = total / numSamples;
-
+  
   if(smoothedValue >= RI_1 && smoothedValue <= RS_1){
     const char *msg = "1";			// carga numero 1 en mensaje a enviar
     rf_driver.send((uint8_t *)msg, strlen(msg));	// envia el mensaje
